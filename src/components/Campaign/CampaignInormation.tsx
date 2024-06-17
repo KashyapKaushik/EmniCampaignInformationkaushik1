@@ -3,7 +3,7 @@ interface Campaign{
     name:string;
     startDate:string;
     endDate:string;
-    budget:string;
+    Budget:string;
 }
 
 const CampaignInormation = () => {
@@ -17,12 +17,15 @@ const CampaignInormation = () => {
 
         event.preventDefault();
 
-        const newcampaign:Campaign ={
+        const newcampaign : Campaign ={
             name: campaginName,
-            startDate,
-            endDate,
-            budget   
-        }
+            sate:startDate,
+            edate:endDate,
+            Budget:budget,
+        };
+
+        setCampaigns([...campaigns,newcampaign]);
+
 
     return (
         <>
