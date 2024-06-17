@@ -10,7 +10,7 @@ const Signuppage = () => {
 
   const handleSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
-    // if (password !== confirmPassword) {
+    // if (password !== confirmPassword) {a
     //   alert('Passwords do not match');
     //   return;
     // }

@@ -17,16 +17,16 @@ const CampaignInormation = () => {
 
         event.preventDefault();
 
-        const newcampaign : Campaign ={
-            name: campaginName,
-            sate:startDate,
-            edate:endDate,
-            Budget:budget,
-        };
+        // const newcampaign : Campaign ={
+        //     name: campaginName,
+        //     sate:startDate,
+        //     edate:endDate,
+        //     Budget:budget,
+        // };
 
-        setCampaigns([...campaigns,newcampaign]);
+        // setCampaigns([...campaigns,newcampaign]);
 
-
+    }
     return (
         <>
             <div className="campagin-container">
@@ -36,7 +36,7 @@ const CampaignInormation = () => {
                         <input type='text' placeholder='Enter Campagin Name'
                             value={campaginName} onChange={(e) => setCampaginName(e.target.value)} />
                         <input type='text' placeholder='Enter Start Date'
-                            value={statDate} onChange={(e) => setStartDate(e.target.value)} />
+                            value={startDate} onChange={(e) => setStartDate(e.target.value)} />
                         <input type='text' placeholder='Enter End Date'
                             value={endDate} onChange={(e) => setEndDate(e.target.value)} />
                         <input type='text' placeholder='Enter Budget'
