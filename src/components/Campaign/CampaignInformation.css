@@ -1,0 +1,116 @@
+/* .campaign-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+   background-color: #060417; 
+  }
+  
+  .campaign-content {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .campaign-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .campaign-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campaign-content form input,
+  .campaign-content form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .campaign-content form button {
+    cursor: pointer;
+  }
+  
+  .campaign-list {
+    margin-top: 20px;
+  }
+  
+  .campaign-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+   */
+/* 
+   .campaign-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .campaign-content {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .campaign-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .campaign-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .campaign-content form input,
+  .campaign-content form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .campaign-content form button {
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .campaign-list {
+    margin-top: 20px;
+  }
+  
+  .campaign-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+   */
