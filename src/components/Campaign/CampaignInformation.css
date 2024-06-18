@@ -1,53 +1,4 @@
-/* .campaign-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-   background-color: #060417; 
-  }
-  
-  .campaign-content {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .campaign-content h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .campaign-content form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .campaign-content form input,
-  .campaign-content form button {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .campaign-content form button {
-    cursor: pointer;
-  }
-  
-  .campaign-list {
-    margin-top: 20px;
-  }
-  
-  .campaign-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-   */
+
 /* 
    .campaign-container {
     display: flex;
@@ -114,3 +65,108 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
    */
+
+/* .campagin-container{
+  background-color: #060417;
+}
+.campaign-section{
+  
+}
+
+.information-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem 6rem;
+}
+
+
+.inputdiv label{
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.submitdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.campaign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.inputdiv{
+  display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.campaign-section {
+  /* width: 100%;
+  max-width: 600px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding-top: 1rem;
+}
+
+.campaign-content{
+  position: relative;
+  align-items: center;
+  width: 25rem;
+  margin-bottom: 20px;
+
+  border: 1.5px solid #6751b9;
+
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(245, 239, 239, 0.1);
+}
+
+.inputdiv {
+  margin-bottom: 10px;
+}
+
+.submitdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.information-content {
+  width: 100%;
+  max-width: 800px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+  padding-top: 1rem;
+}
+
+.grid-header, .grid-row{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 0.7rem;
+  padding: 0.7rem;
+  border-bottom: 1px solid #ccc;
+}
+.grid-header{
+  color: white;
+  font-weight: bolder;
+  background-color: #553dbe;
+}
+.grid-row div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-row button {
+  margin: 0 5px;
+} 
