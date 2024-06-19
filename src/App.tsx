@@ -12,10 +12,9 @@ import Signuppage from './components/Signuppage/Signuppage';
 function App() {
   return (
     <>
-    {/* <div className='container'>
-      <Loginpage/>
-    </div> */}
+      <h1>honey pagal</h1>
 
+{/* 
     <Router>
       <div className='container'> 
       <Routes>
@@ -25,7 +24,7 @@ function App() {
 
       </Routes>
       </div>
-    </Router>
+    </Router> */}
     </>
   );
 }
