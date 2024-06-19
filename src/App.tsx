@@ -12,9 +12,6 @@ import Signuppage from './components/Signuppage/Signuppage';
 function App() {
   return (
     <>
-      
-
-
     <Router>
       <div className='container'> 
       <Routes>
