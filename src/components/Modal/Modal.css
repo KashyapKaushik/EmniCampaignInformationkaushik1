@@ -12,7 +12,9 @@
   }
   
   .modal-content {
-    background: white;
+    background-color: #060417;
+    
+    color: white;
     padding: 20px;
     border-radius: 5px;
     width: 100%;

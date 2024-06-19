@@ -500,6 +500,10 @@ const CampaignInformation: React.FC = () => {
     const filteredCampaigns = campaigns.filter((_, i) => i !== index);
     setCampaigns(filteredCampaigns);
   };
+  const closeModal=() => {
+    clearForm();
+    setIsModalOpen(false);
+  }
 
   const clearForm = () => {
     setCampaignName('');
@@ -580,7 +584,7 @@ const CampaignInformation: React.FC = () => {
         </div>
       </div>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+      <Modal isOpen={isModalOpen} onClose={() => closeModal()}>
         <form onSubmit={handleUpdate}>
           <h2>Edit Campaign Information</h2>
           <div className="inputdiv">
