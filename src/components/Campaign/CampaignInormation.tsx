@@ -25,8 +25,7 @@ const CampaignInformation: React.FC = () => {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   // const [editingIndex, setEditingIndex] = useState<number | null>(null);
   // const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-
- 
+  
   return (
     <>
       <div className="campaign-container">
