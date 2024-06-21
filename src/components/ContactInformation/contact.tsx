@@ -20,7 +20,7 @@ interface Contact{
 const Contact: React.FC = () => {
  
   const editOption: EditSettingsModel={ allowEditing: true , allowAdding: true, allowDeleting:true , mode:'Dialog'};
-  const toolbaroption: ToolbarItems[]=["Add" ,"Edit","Delete"]
+  const toolbaroption: ToolbarItems[]=["Add" ,"Edit","Delete"];
   // const [campaignName, setCampaignName] = useState<string>('');
   // const [startDate, setStartDate] = useState<string>('');
   // const [endDate, setEndDate] = useState<string>('');
