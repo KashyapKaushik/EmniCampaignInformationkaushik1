@@ -112,6 +112,9 @@ import { Link } from 'react-router-dom';
 import Loginpage from './components/LoginPage/Loginpage';
 import Homepage from './components/Homepage/Homepage';
 import Signuppage from './components/Signuppage/Signuppage';
+import Category from './components/Category/Category';
+import Contact from './components/ContactInformation/contact';
+import Account from './components/Account/Account';
 
 
 
