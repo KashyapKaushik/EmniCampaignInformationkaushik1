@@ -1,3 +1,4 @@
+@import './App.css';
 
 
 
@@ -9,6 +10,8 @@
   scroll-behavior:smooth;
 
 }
+
+
 
 /* body{
   color: white;

@@ -96,7 +96,8 @@
   padding: 20px;
   height: 100vh;
   width: 100vw;
-  background-color: #060417;
+  /* background-color: #060417; */
+  padding-top: 4rem;
 }
 .campaign-container h2{
   color: #6751b9;
