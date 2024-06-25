@@ -5,6 +5,8 @@
   "dependencies": {
     "@syncfusion/ej2-calendars": "^26.1.38",
     "@syncfusion/ej2-react-buttons": "^26.1.35",
+    "@syncfusion/ej2-react-calendars": "^26.1.38",
+    "@syncfusion/ej2-react-dropdowns": "^26.1.38",
     "@syncfusion/ej2-react-grids": "^26.1.38",
     "@syncfusion/ej2-react-navigations": "^26.1.38",
     "@testing-library/jest-dom": "^5.17.0",

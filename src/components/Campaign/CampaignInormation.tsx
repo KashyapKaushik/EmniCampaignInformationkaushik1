@@ -7,7 +7,7 @@ import { ColumnDirective,
   
   } from '@syncfusion/ej2-react-grids';
 
-interface Campaign {
+  interface Campaign {
   campaignName: string;
   startDate: string;
   endDate: string;
