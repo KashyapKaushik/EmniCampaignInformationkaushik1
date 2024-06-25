@@ -20,3 +20,8 @@ export const categories = [
     { id: 2, name: 'Category 2' },
     { id: 3, name: 'Category 3' }
 ];
+
+export const accounttype =[
+    {id:1,name:'Debit'},
+    {id:2,name:'Credit'}
+];
