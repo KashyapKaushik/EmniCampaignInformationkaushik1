@@ -4,6 +4,7 @@ import { ColumnDirective, ColumnsDirective, EditSettingsModel, GridComponent, To
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { data, campaigns, contacts, categories,accounttype } from '../../Data/data'; // Adjust the import path as needed
+import { toBeRequired } from '@testing-library/jest-dom/matchers';
 
 interface Account {
     id: number;
@@ -29,23 +30,29 @@ const Account: React.FC = () => {
         }
     });
 
-    const typeDropdownParams = {
-        params: {
-            dataSource: [
-                { text: 'Debit', value: 'Debit' },
-                { text: 'Credit', value: 'Credit' }
-            ],
-            fields: { text: 'text', value: 'value' },
-            allowFiltering: true,
-            placeholder: 'Select an option'
-        }
-    };
+    // const typeDropdownParams = {
+    //     params: {
+    //         dataSource: [
+    //             { text: 'Debit', value: 'Debit' },
+    //             { text: 'Credit', value: 'Credit' }
+    //         ],
+    //         fields: { text: 'text', value: 'value' },
+    //         allowFiltering: true,
+    //         placeholder: 'Select an option'
+    //     }
+    // };
 
     const dateParams = {
         params: {
             format: 'dd/MM/yyyy'
         }
     };
+
+    const requiredRule = { required: true, message: 'This field is required' };
+    const numberRule = { required: true, number: true, min: 1, message: 'Please enter a valid number' };
+    const dateRule = { required: true, message: 'Please select a valid date' };
+    const typeRule = { required: true, message: 'Please select Debit or Credit' };
+  
 
     return (
         <>
@@ -64,11 +71,11 @@ const Account: React.FC = () => {
                     >
                         <ColumnsDirective>
                             <ColumnDirective field='campaignname' headerText='Campaign Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={campaigns} edit={dropdownParams(campaigns)} />
-                            <ColumnDirective field='accountname' headerText='Account Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={contacts} edit={dropdownParams(contacts)} />
-                            <ColumnDirective field='category' headerText='Category' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={categories} edit={dropdownParams(categories)} />
-                            <ColumnDirective field='amount' headerText='Amount' width='150' editType='numericedit' />
-                            <ColumnDirective field='date' headerText='Date' width='150' editType='datepickeredit' edit={dateParams} />
-                            <ColumnDirective field='accounttype' headerText='Type' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={accounttype} edit={dropdownParams(accounttype)} />
+                            <ColumnDirective field='accountname' headerText='Account Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={contacts} edit={dropdownParams(contacts)} validationRules={requiredRule}/>
+                            <ColumnDirective field='category' headerText='Category' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={categories} edit={dropdownParams(categories)} validationRules={requiredRule} />
+                            <ColumnDirective field='amount' headerText='Amount' width='150' editType='numericedit' validationRules={numberRule} />
+                            <ColumnDirective field='date' headerText='Date' width='150' editType='datepickeredit' edit={dateParams}  validationRules={dateRule}/>
+                            <ColumnDirective field='accounttype' headerText='Type' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={accounttype} edit={dropdownParams(accounttype)} validationRules={typeRule}/>
                         </ColumnsDirective>
                         <Inject services={[Page, Edit, Filter, Toolbar,ForeignKey]} />
                     </GridComponent>
