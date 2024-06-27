@@ -3,9 +3,7 @@ import './Account.css';
 import { ColumnDirective, ColumnsDirective, EditSettingsModel, GridComponent, Toolbar, ToolbarItems, Page, Edit, Inject, Filter, ForeignKey, Group, Sort, PdfExport, ExcelExport, FilterSettingsModel } from '@syncfusion/ej2-react-grids';
 import { ComboBoxComponent, DropDownListComponent, ToolbarSettings } from '@syncfusion/ej2-react-dropdowns';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
-import { data, campaigns, contacts, categories, accounttype } from '../../Data/data'; // Adjust the import path as needed
-import { DataManager, ODataV4Adaptor, Query, DataOptions } from '@syncfusion/ej2-data';
-import { ClickEventArgs } from '@syncfusion/ej2-react-buttons';
+import { data, campaigns, contacts, categories,accounttype } from '../../Data/data'; // Adjust the import path as needed
 
 interface Account {
     id: number;
@@ -110,25 +108,24 @@ const Account: React.FC = () => {
         }
     });
 
-    const typeDropdownParams = {
-        params: {
-            dataSource: [
-                { text: 'Debit', value: 'Debit' },
-                { text: 'Credit', value: 'Credit' }
-            ],
-            fields: { text: 'text', value: 'value' },
-            allowFiltering: true,
-            placeholder: 'Select an option'
-        }
-    };
+    // const typeDropdownParams = {
+    //     params: {
+    //         dataSource: [
+    //             { text: 'Debit', value: 'Debit' },
+    //             { text: 'Credit', value: 'Credit' }
+    //         ],
+    //         fields: { text: 'text', value: 'value' },
+    //         allowFiltering: true,
+    //         placeholder: 'Select an option'
+    //     }
+    // };
 
     const dateParams = {
         params: {
             format: 'dd/MM/yyyy'
         }
-  };
-  const filterSettings: FilterSettingsModel = {type: 'Excel'};
- 
+    };
+
     return (
         <>
             <div className="account-container">
@@ -156,16 +153,10 @@ const Account: React.FC = () => {
                             <ColumnDirective field='accountname' headerText='Account Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={contacts} edit={dropdownParams(contacts)} />
                             <ColumnDirective field='category' headerText='Category' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={categories} edit={dropdownParams(categories)} />
                             <ColumnDirective field='amount' headerText='Amount' width='150' editType='numericedit' />
-                            <ColumnDirective field='date' headerText='Date' width='150' editType='datepickeredit' type='date'  format="yMd"/>
+                            <ColumnDirective field='date' headerText='Date' width='150' editType='datepickeredit' edit={dateParams} />
                             <ColumnDirective field='accounttype' headerText='Type' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={accounttype} edit={dropdownParams(accounttype)} />
-              </ColumnsDirective>
-              
-
-             
-              
-                
-             
-                        <Inject services={[Page, Edit, Toolbar, ForeignKey, Sort, Group, Filter, PdfExport, ExcelExport]} />
+                        </ColumnsDirective>
+                        <Inject services={[Page, Edit, Filter, Toolbar,ForeignKey]} />
                     </GridComponent>
                 </div>
             </div>
