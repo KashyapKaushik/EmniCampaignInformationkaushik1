@@ -114,7 +114,8 @@ import Homepage from './components/Homepage/Homepage';
 import Signuppage from './components/Signuppage/Signuppage';
 import Category from './components/Category/Category';
 import Contact from './components/ContactInformation/contact';
-import Account from './components/Account2/Account2';
+import Account2 from './components/Account2/Account2';
+import Account from './components/Account/Account';
 // import UserExpense from './components/UserExpense/UserExpense';
 
 
@@ -164,8 +165,8 @@ function App() {
          <Route path='/campaign' element={<CampaignInformation/>} /> 
          <Route path='/category' element={<Category/>} /> 
          <Route path='/contact' element={<Contact/>} /> 
-         {/* <Route path='/account' element={<Account/>} />  */}
-         <Route path='/account2' element={<Account/>} /> 
+         <Route path='/account' element={<Account/>} /> 
+         <Route path='/account2' element={<Account2/>} /> 
 
          {/* <Route path='/user' element={<UserExpense/>} />  */}
 
