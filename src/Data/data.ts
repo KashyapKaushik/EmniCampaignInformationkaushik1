@@ -1,7 +1,7 @@
 export const data = [
     { id: 1, campaignname: 1, accountname: 1, category: 1, amount: 100, date: new Date(), accounttype: 'Debit' },
     { id: 2, campaignname: 2, accountname: 2, category: 2, amount: 200, date: new Date(), accounttype: 'Credit' }
-];
+]; 
 
 export const campaigns = [
     { id: 1, name: 'Campaign 1' },
