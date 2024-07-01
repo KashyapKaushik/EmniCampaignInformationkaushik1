@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "date": "2023-01-01",
+      "description": "Salary",
+      "debit": 0,
+      "credit": 5000,
+      "balance": 5000
+    },
+    {
+      "id": 2,
+      "date": "2023-01-02",
+      "description": "Grocery",
+      "debit": 200,
+      "credit": 0,
+      "balance": 4800
+    }
+  ]
+  
