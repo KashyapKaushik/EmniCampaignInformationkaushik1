@@ -57,11 +57,6 @@ const Account: React.FC = () => {
     //     }
     // };
 
-    const dateParams = {
-        params: {
-            format: 'dd/MM/yyyy'
-        }
-    };
 
     function dialogTemplate(props: Account): any {
       return (<DialogFormTemplate {...props} />);
@@ -99,7 +94,7 @@ const Account: React.FC = () => {
                         actionComplete={actionComplete.bind(this)}
                     >
                         <ColumnsDirective>
-                                    <ColumnDirective field='campaignname' headerText='Campaign Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={campaigns} edit={dropdownParams(campaigns)}  validationRules={{required:true}}  />
+                                    <ColumnDirective field='campaignname' headerText='Campaign Name' width='150' editType='dropdownedit'isPrimaryKey={true}  dataSource={campaigns} edit={dropdownParams(campaigns)}  validationRules={{required:true}}  />
                                     <ColumnDirective field='accountname' headerText='Account Name' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={contacts} edit={dropdownParams(contacts)} validationRules={{required:true}} />
                                     <ColumnDirective field='category' headerText='Category' width='150' editType='dropdownedit' foreignKeyValue='name' foreignKeyField='id' dataSource={categories} edit={dropdownParams(categories)} validationRules={{required:true}}  />
                                     <ColumnDirective field='amount' headerText='Amount' width='150' editType='numericedit' validationRules={{required:true}} />
