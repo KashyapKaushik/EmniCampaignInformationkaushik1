@@ -114,7 +114,8 @@ import Homepage from './components/Homepage/Homepage';
 import Signuppage from './components/Signuppage/Signuppage';
 import Category from './components/Category/Category';
 import Contact from './components/ContactInformation/contact';
-import Account from './components/Account/Account';
+import Account from './components/Account2/Account2';
+// import UserExpense from './components/UserExpense/UserExpense';
 
 
 
@@ -146,7 +147,10 @@ function App() {
                    <Link  style={{textDecoration: "none"}} to={'/campaign'}> <li>Campaign Information</li></Link>
                    <Link style={{textDecoration: "none"}} to={'/contact'}> <li>Contact</li></Link>
                    <Link style={{textDecoration: "none"}} to={'/category'}> <li>Category</li></Link> 
-                   <Link style={{textDecoration: "none"}} to={'/account'}> <li>Account</li></Link>     
+                   <Link style={{textDecoration: "none"}} to={'/account'}> <li>Account</li></Link>
+                   <Link style={{textDecoration: "none"}} to={'/account2'}> <li>Account2</li></Link>   
+                   <Link style={{textDecoration: "none"}} to={'/user'}> <li>UserExpense</li></Link>     
+
 
                     </ul>
             </div>   
@@ -160,7 +164,11 @@ function App() {
          <Route path='/campaign' element={<CampaignInformation/>} /> 
          <Route path='/category' element={<Category/>} /> 
          <Route path='/contact' element={<Contact/>} /> 
-         <Route path='/account' element={<Account/>} /> 
+         {/* <Route path='/account' element={<Account/>} />  */}
+         <Route path='/account2' element={<Account/>} /> 
+
+         {/* <Route path='/user' element={<UserExpense/>} />  */}
+
       </Routes>
 
       </div>
@@ -184,15 +192,16 @@ export default App;
 // import Homepage from './components/Homepage/Homepage';
 // import Signuppage from './components/Signuppage/Signuppage';
 // import Account from './components/Account/Account';
+// import UserExpense from './components/UserExpense/UserExpense';
 
 
 
 // const App:React.FC= () =>{
 //   return (
 //     <>
-//     <Account/>
+//     <UserExpense/>
    
-//      {/* <Router>
+//       {/* <Router>
 //       <div className='container'> 
 //       <Routes>
 //         <Route path='/' element={<Loginpage/>} /> 
@@ -202,8 +211,8 @@ export default App;
 
 //       </Routes>
 //       </div>
-//     </Router> 
-//      */}
+//     </Router>  */}
+     
 //     </>
 //   );
 // }
